@@ -2,7 +2,7 @@
   "name": "analytics",
   "version": "1.0.0",
   "description": "buried some statistical",
-  "main": "index.js",
+  "main": "lib/index.js",
   "directories": {
     "lib": "lib"
   },
