@@ -1,0 +1,28 @@
+<html>
+  <body>
+    <a id="clickme">Click Me</a>
+
+    <script type="module">
+      import MCI from '../index.js'
+
+      var btn = document.getElementById('clickme')
+
+      btn.addEventListener('click', function() {
+        MCI.invoke({
+          url: 'baidu.com',
+          method: 'a',
+          data: {
+            a: 1,
+            b: 2
+          },
+          isCopy: true,
+          timeout: 5e2, // 不建议修改
+          beforeInvoke: function() {},
+          fallback: function() {
+            console.log(`This is Callback`)
+          }
+        })
+      })
+    </script>
+  </body>
+</html>
