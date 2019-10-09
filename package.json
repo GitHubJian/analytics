@@ -7,7 +7,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/GitHubJian/analytics/issues"
   },
-  "homepage": "https://github.com/GitHubJian/analytics#readme"
+  "homepage": "https://github.com/GitHubJian/analytics#readme",
+  "devDependencies": {
+    "webpack": "^4.39.3"
+  },
+  "dependencies": {
+    "clipboard": "^2.0.4"
+  }
 }
