@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test</title>
+  </head>
+  <body>
+    <h1 class="_civ_check_">Hello, world</h1>
+
+    <script src="./checkInView.js"></script>
+    <script>
+      var civ = window.CheckInView({
+        className: '_civ_check_2',
+        viewHandler: function(el) {
+          console.log('123')
+        }
+      })
+
+      civ.check()
+    </script>
+  </body>
+</html>
